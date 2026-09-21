@@ -2,18 +2,18 @@
 
 > Official event landing page for **Opensource × Hacktoberfest 2026**, organized by the **ACM Student Chapter at Medi-Caps University** (Indore, India).
 
-[![Deploy to GitHub Pages](https://github.com/AnushkaBhardwaj15/hacktober-showcase/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/AnushkaBhardwaj15/hacktober-showcase/actions/workflows/deploy-pages.yml)
-[![Build & Validation](https://github.com/AnushkaBhardwaj15/hacktober-showcase/actions/workflows/deploy-vercel.yml/badge.svg)](https://github.com/AnushkaBhardwaj15/hacktober-showcase/actions/workflows/deploy-vercel.yml)
+[![Deploy to GitHub Pages](https://github.com/saransh-sh/hacktober-showcase/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/saransh-sh/hacktober-showcase/actions/workflows/deploy-pages.yml)
+[![Build & Validation](https://github.com/saransh-sh/hacktober-showcase/actions/workflows/deploy-vercel.yml/badge.svg)](https://github.com/saransh-sh/hacktober-showcase/actions/workflows/deploy-vercel.yml)
 
-🌐 **Live Deployment (GitHub Pages)**: [https://anushkabhardwaj15.github.io/hacktober-showcase/](https://anushkabhardwaj15.github.io/hacktober-showcase/)  
-👥 **Tech Team Page**: [https://anushkabhardwaj15.github.io/hacktober-showcase/tech-team/](https://anushkabhardwaj15.github.io/hacktober-showcase/tech-team/)  
+🌐 **Live Deployment (GitHub Pages)**: [https://saransh-sh.github.io/hacktober-showcase/](https://saransh-sh.github.io/hacktober-showcase/)  
+👥 **Tech Team Page**: [https://saransh-sh.github.io/hacktober-showcase/tech-team/](https://saransh-sh.github.io/hacktober-showcase/tech-team/)  
 🚀 **Production Mirror (Vercel)**: [https://hacktober-showcase.vercel.app](https://hacktober-showcase.vercel.app)
 
 ---
 
 ## Overview
 
-**Opensource ×  Hacktoberfest 2026** is a live, practical online workshop designed to introduce university students and beginner developers to the open-source ecosystem, the Git/GitHub collaboration workflow, and the process of making their first meaningful pull request.
+**Opensource × Hacktoberfest 2026** is a live, practical online workshop designed to introduce university students and beginner developers to the open-source ecosystem, the Git/GitHub collaboration workflow, and the process of making their first meaningful pull request.
 
 The website serves as the interactive digital hub for the event scheduled for **September 21, 2026 (6:00 PM – 8:00 PM IST)**, featuring guest speaker **Mr. Harsh Sahu** (Open Source Mentor & Software Engineer). It provides event registration, learning outcomes, an interactive 4-step Git simulator terminal, a live countdown clock, speaker spotlight, and event FAQs.
 
@@ -246,12 +246,12 @@ Every performance optimization in this codebase is grounded in the repository's 
 
 ## Automated CI/CD & Deployments
 
-### 1. GitHub Pages Deployment (`main` & `kirito` branches)
+### 1. GitHub Pages Deployment (`main` branch)
 The website is configured for automated CI/CD deployment to GitHub Pages via `.github/workflows/deploy-pages.yml`:
 
-- **Live URL**: [https://anushkabhardwaj15.github.io/hacktober-showcase/](https://anushkabhardwaj15.github.io/hacktober-showcase/)
-- **Trigger Branches**: `main`, `kirito`, and `Kirito`
-- **Automation**: GitHub Actions automatically triggers a rebuild and redeployment on every `git push` to `main` or `kirito`.
+- **Live URL**: [https://saransh-sh.github.io/hacktober-showcase/](https://saransh-sh.github.io/hacktober-showcase/)
+- **Trigger Branch**: `main`
+- **Automation**: GitHub Actions automatically triggers a rebuild and redeployment on every `git push` to `main`.
 - **Manual Deployment**: Manual triggering is enabled via `workflow_dispatch` in the Actions tab.
 - **Build Command**: `npm run build` (runs `node test/validate.js` to verify syntax, assets, and markup).
 - **Build Output Directory**: `.` (the static site root directory containing `index.html`).

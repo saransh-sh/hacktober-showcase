@@ -4,8 +4,6 @@ name: Deploy to GitHub Pages
   push:
     branches:
       - main
-      - kirito
-      - Kirito
   workflow_dispatch:
 
 permissions:

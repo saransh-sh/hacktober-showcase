@@ -1173,6 +1173,78 @@ body {
   }
 }
 
+/* ==========================================================================
+   HOMEPAGE EDITORIAL FEEDBACK FORM CTA BANNER
+   ========================================================================== */
+.feedback-marquee-banner {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: var(--accent-yellow);
+  color: var(--text-dark);
+  border-top: 3px solid var(--border-dark);
+  border-bottom: 3px solid var(--border-dark);
+  box-shadow: 0 4px 0 var(--shadow-dark);
+  padding: 1.15rem 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.feedback-marquee-banner:hover {
+  background-color: #E2A613;
+}
+
+.feedback-marquee-banner .marquee-track {
+  animation: marqueeScrollReverse 26s linear infinite;
+}
+
+.feedback-marquee-banner:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.feedback-marquee-banner .marquee-sep {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  color: var(--border-dark);
+}
+
+.feedback-marquee-banner .banner-action {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--border-dark);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  letter-spacing: -0.3px;
+  transition: color 0.15s ease;
+}
+
+.feedback-marquee-banner:hover .banner-action {
+  color: var(--accent-peach);
+  text-decoration-color: var(--accent-peach);
+}
+
+@keyframes marqueeScrollReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-marquee-banner {
+    padding: 0.85rem 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;

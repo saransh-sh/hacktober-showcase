@@ -19,7 +19,7 @@ const teamMembers = [
   },
   {
     id: "member-3",
-    name: "Anushka Bharadwaj",
+    name: "Anushka Bhardwaj",
     designation: "Technical Executive",
     image: "img/team/3.jpg"
   },
